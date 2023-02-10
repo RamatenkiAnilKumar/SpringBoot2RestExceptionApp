@@ -12,6 +12,7 @@ import in.nareshit.raghu.model.ErrorType;
 @ControllerAdvice
 public class MyExceptionHandler {
 	
+	
 	@ExceptionHandler(EmployeeNotFoundException.class)
 	public ResponseEntity<ErrorType> handlerEmpNotFound(EmployeeNotFoundException ex){
 		
