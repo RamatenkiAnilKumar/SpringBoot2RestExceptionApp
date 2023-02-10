@@ -15,6 +15,7 @@ public class MyExceptionHandler {
 	@ExceptionHandler(EmployeeNotFoundException.class)
 	public ResponseEntity<ErrorType> handlerEmpNotFound(EmployeeNotFoundException ex){
 		
+		System.out.println("New Sysout added in SpringBoot Application ");
 		
 		return new ResponseEntity<ErrorType>
 		(
@@ -23,5 +24,7 @@ public class MyExceptionHandler {
 				
 				
 	}
+	
+	
 
 }
