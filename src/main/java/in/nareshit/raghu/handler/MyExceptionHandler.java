@@ -12,6 +12,7 @@ import in.nareshit.raghu.model.ErrorType;
 @ControllerAdvice
 public class MyExceptionHandler {
 	
+	System.out.println("New Sysout added in SpringBoot Application ");
 	
 	@ExceptionHandler(EmployeeNotFoundException.class)
 	public ResponseEntity<ErrorType> handlerEmpNotFound(EmployeeNotFoundException ex){
